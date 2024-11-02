@@ -1,0 +1,261 @@
+body{
+    background: linear-gradient(45deg,blue,violet,blueviolet);
+    width: 99.2%;
+    height: 100vh;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.mee{
+    justify-content: center;
+    display: block;
+    margin: auto;
+    width: 65%;
+    margin-top: 5%;
+    height: auto;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.185);
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+.mee:hover{
+    background-color: rgba(0, 0, 0, 0.699);
+    color: white;
+    border-radius: 10px;
+}
+#input{
+    position: relative;
+    margin-left: 2%;
+    padding: 7px;
+    height: 35px;
+    width: 65%;
+    border-radius: 40px;
+    border: none;
+}
+#btn1{
+    background-color: darkred;
+    position: absolute;
+    right: 280px;
+    margin-right: 2%;
+    padding: 7px;
+    height: 49px;
+    width: 20%;
+    outline: none;
+    border-radius: 40px;
+    color: white;
+    font-size: larger;
+    border: none;
+    transition: all 0.5s ease;
+}
+#btn1:hover{
+    background-color: green;
+    height: 49px;
+}
+.li{
+    margin-bottom: 12px;
+    font-size: larger;
+    list-style: none;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.see{
+    text-decoration: line-through;
+}
+.ic{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin: -0.4%;
+
+}
+li{
+    margin-left: 2%;
+    padding: 9px;
+    background-color:black;
+    border-radius: 25px;
+}
+.li::before{
+    content: "";
+    position: absolute;
+    left: 19.5%;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: blue;
+}
+.you{
+    background-color: rgba(255, 255, 255, 0.089);
+    border: 2px solid rgba(255, 255, 255, 0.082);
+}
+/*For laptop only*/
+@media only screen and (min-width: 615px) and (max-width: 768px) {
+    h1{
+        font-size: 70px;
+    }
+    .mee{
+        width: 95%;
+        margin-top: 8%;
+
+    }
+    #input{
+        margin-left: 2%;
+        padding: 7px;
+        height: 35px;
+        width: 91.5%;
+        font-size: larger;
+    
+    }
+    #input::placeholder{
+        font-size: large;
+    }
+    #input:focus{
+        border: none;
+        
+    }
+    #btn1{
+        right: 35px;
+        margin-right: 2%;
+        padding: 7px;
+        height: 49px;
+        width: 25%;
+    }
+    .li{
+        margin-bottom: 18px;
+        margin-right: 1%;
+        font-size: x-large;
+    
+    }
+    .ic{
+        width: 40px;
+        height: 40px;
+        margin: -0.9%;
+    }
+    .li::before{
+        left: 5%;
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        border: 2px solid white;
+        background-color: blue;
+    }
+    
+}
+/*Small laptops to big tablet*/
+@media only screen and (min-width: 425px) and (max-width: 614px) {
+    h1{
+        font-size: 55px;
+    }
+    .mee{
+        width: 100%;
+        margin-top: 11%;
+
+    }
+    #input{
+        margin-left: 2%;
+        padding: 7px;
+        height: 26px;
+        width: 92%;
+        font-size: small;
+    
+    }
+    #input::placeholder{
+        font-size: small;
+    }
+    #input:focus{
+        border: none;
+        
+    }
+    #btn1{
+        right: -1px;
+        margin-right: 2%;
+        padding: 6px;
+        height: 40px;
+        width: 30%;
+    }
+    #btn1:hover{
+        height: 40px;
+    }
+    .li{
+        margin-bottom: 18px;
+        margin-right: 1%;
+        font-size: large;
+    
+    }
+    .ic{
+        width: 34px;
+        height: 34px;
+        margin: -1.6%;
+    }
+    .li::before{
+        left: 5%;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: 2px solid white;
+        background-color: blue;
+    }
+    
+}
+/*for phone only*/
+@media only screen and (min-width: 300px) and (max-width: 424px) {
+    h1{
+        font-size: 46px;
+    }
+    .mee{
+        width: 100%;
+        margin-top: 13%;
+
+    }
+    #input{
+        margin-left: 2%;
+        padding: 7px;
+        height: 19px;
+        width: 92%;
+        font-size: small;
+    
+    }
+    #input::placeholder{
+        font-size: x-small;
+    }
+    #input:focus{
+        border: none;
+        
+    }
+    #btn1{
+        right: -8px;
+        margin-right: 2%;
+        padding: 6px;
+        font-size: small;
+        height: 34px;
+        width: 30%;
+    }
+    #btn1:hover{
+        height: 34px;
+    }
+    .li{
+        margin-bottom: 18px;
+        margin-right: 6%;
+        overflow: auto;
+        font-size: small;
+    
+    }
+    .ic{
+        width: 26px;
+        height: 26px;
+        margin: -1.6%;
+    }
+    .li::before{
+        left: 5%;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        border: 2px solid white;
+        background-color: blue;
+    }
+    
+}
